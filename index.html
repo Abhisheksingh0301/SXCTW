@@ -6,24 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind</title>
     <link rel="stylesheet" href="input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-cyan-500">
 
-    <nav class="bg-blue-950 text-white flex justify-between">
+    <nav class="bg-blue-700 text-white md:flex md:justify-between mx-4">
         <span class=" text-2xl flex items-center mx-5 font-bold font-serif text-yellow-100">Tailwind</span>
-        <ul class="px-28 py-4 flex space-x-4 justify-end">
-            <li class="mx-2 text-xl cursor-pointer">Home</li>
-            <li class="mx-2 text-xl cursor-pointer">About</li>
-            <li class="mx-2 text-xl cursor-pointer">Contact</li>
+        <ul class="lg:px-28 py-4  space-x-4 justify-end  lg:flex md:flex md:items-center sm:justify-start sm:px-4">
+            <!-- <ul class="px-28 py-4 md:flex md:items-center space-x-4 flex justify-end sm:justify-start sm:px-4"> -->
+            <li class="mx-2 text-xl cursor-pointer sm:inline-block">Home</li>
+            <li class="mx-2 text-xl cursor-pointer sm:inline-block">About</li>
+            <li class="mx-2 text-xl cursor-pointer sm:inline-block">Contact</li>
         </ul>
     </nav>
-    <div class="w-full flex justify-evenly bg-green-200">
-        <div class="w-2/3 flex flex-col items-start m-12">
-            <div class="text-6xl">
+    <div class="bg-cyan-200 text-4xl p-10 mx-4 text-center text-green-900 w-auto"> Work cycle of COE office</div>
+    <div class="max-w-fit md:py-[80] py-5 flex mx-4 sm:flex-row flex-col bg-red-400 justify-evenly">
+        <!-- <div class="max-w-[1320px] md:py-[80] py-5 flex mx-4 sm:flex-row flex-col bg-red-400 justify-evenly"></div> -->
+        <div class="basis-[35%] pb-5 mx-auto overflow-hidden">
+            <img src="public/notes.jpg" alt="No image !!!!"
+                class=" w-80 rounded-full h-80 hover:scale-125 duration-1000">
+        </div>
+        <div class="basis-[65%] m-12">
+            <div class="text-6xl sm:text-center md:text-left hover:italic text-left">
                 Top mobile brands.
             </div>
-            <p class="w-full py-3 text-justify">
+            <div class="lg:w-80 mx-20 h-1 border-b-4 border-blue-400 mt-2 rounded-2xl md:w-12"></div>
+            <p class="py-3 text-justify hover:text-xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
@@ -31,41 +40,38 @@
                 consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
-            <div class="my-4 flex justify-end">
+            <div class="flex flex-col items-end">
                 <button
                     class="bg-purple-500 px-3 py-2 rounded-xl hover:text-slate-900 hover:bg-fuchsia-100 border-b-4 hover:border-black">
                     Show more
                 </button>
             </div>
         </div>
-        <div class="w-1/3 flex flex-col items-center mb-5 my-5">
-            <img src="/notes.jpg" alt="No image !!!!" class="h-80 w-80 rounded-full">
-        </div>
     </div>
-    <div class="w-full flex justify-evenly bg-blue-200">
-        <div class="w-1/3 flex flex-col items-center mb-5 my-5">
-            <img src="/receive.jpg" alt="No image !!!!" class="h-80 w-80 rounded-full">
-        </div>
-        <div class="w-2/3 flex flex-col  m-12">
-            <div class="text-6xl">
+    <div class="max-w-[1320px] md:py-[80] py-5 flex mx-auto sm:flex-row flex-col bg-green-200 justify-evenly">
+        <div class="basis-[65%] m-12">
+            <div class="text-6xl sm:text-center md:text-left hover:italic text-left">
                 Top mobile brands.
             </div>
-            <p class="w-full py-3 text-justify">
+            <div class="lg:w-80 mx-20 h-1 border-b-4 border-blue-400 mt-2 rounded-2xl md:w-12"></div>
+            <p class="py-3 text-justify hover:text-xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+                consectetur adipisicing elit.
             </p>
-            <div class="my-4 flex flex-col items-end">
+            <div class="flex flex-col items-end">
                 <button
                     class="bg-purple-500 px-3 py-2 rounded-xl hover:text-slate-900 hover:bg-fuchsia-100 border-b-4 hover:border-black">
                     Show more
                 </button>
             </div>
         </div>
+        <div class="basis-[35%] pb-5 mx-auto overflow-hidden">
+            <img src="public/receive.jpg" alt="No image !!!!"
+                class=" w-80 rounded-full h-80 hover:scale-125 duration-1000">
+        </div>
     </div>
+
     <div class="w-full flex justify-evenly bg-red-300">
         <div class="w-2/3 flex flex-col items-start m-12">
             <div class="text-6xl">
@@ -87,7 +93,7 @@
             </div>
         </div>
         <div class="w-1/3 flex flex-col items-center mb-5 my-5">
-            <img src="/moderation.jpg" alt="No image !!!!" class="h-80 w-80 rounded-full">
+            <img src="public/moderation.jpg" alt="No image !!!!" class="h-80 w-80 rounded-full">
         </div>
     </div>
     <main class="flex bg-cyan-300 justify-around">
@@ -104,7 +110,7 @@
             </div>
         </div>
         <div class="flex items-center">
-            <img src="/typing.jpg" alt="No image !!!!" class=" w-80">
+            <img src="public/typing.jpg" alt="No image !!!!" class=" w-80">
         </div>
     </main>
     <main class="flex bg-pink-300 justify-around">
@@ -121,7 +127,7 @@
             </div>
         </div>
         <div class="flex items-center">
-            <img src="/print.jpg" alt="No image !!!!" class=" w-80">
+            <img src="public/print.jpg" alt="No image !!!!" class=" w-80">
         </div>
     </main>
     <main class="flex bg-green-200 justify-around">
@@ -138,7 +144,7 @@
             </div>
         </div>
         <div class="flex items-center">
-            <img src="/exams.jpg" alt="No image !!!!" class="h-96">
+            <img src="public/exams.jpg" alt="No image !!!!" class="h-96">
         </div>
     </main>
     <main class="flex bg-cyan-300 justify-around">
@@ -155,7 +161,7 @@
             </div>
         </div>
         <div class="flex items-center">
-            <img src="/coding.jpg" alt="No image !!!!" class="h-96">
+            <img src="public/coding.jpg" alt="No image !!!!" class="h-96">
         </div>
     </main>
     <main class="flex bg-slate-300 justify-around">
@@ -172,7 +178,7 @@
             </div>
         </div>
         <div class="flex items-center">
-            <img src="/evaluation.jpg" alt="No image !!!!" class="h-96">
+            <img src="public/evaluation.jpg" alt="No image !!!!" class="h-96">
         </div>
     </main>
     <main class="flex bg-yellow-400 justify-around">
@@ -189,7 +195,7 @@
             </div>
         </div>
         <div class="flex items-center">
-            <img src="/results.jpg" alt="No image !!!!" class="h-96">
+            <img src="public/results.jpg" alt="No image !!!!" class="h-96">
         </div>
     </main>
     <main class="flex bg-purple-300 justify-around">
@@ -206,7 +212,7 @@
             </div>
         </div>
         <div class="flex items-center">
-            <img src="/review.jpg" alt="No image !!!!" class="h-96">
+            <img src="public/review.jpg" alt="No image !!!!" class="h-96">
         </div>
     </main>
 </body>
