@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind example</title>
+    <title>COE Office</title>
     <link rel="stylesheet" href="input.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -123,23 +123,27 @@
         </div>
     </div>
 
-    <main class="flex bg-pink-300 justify-around">
-        <div class="main py-40 pl-9">
-            <div class="text-6xl">
-                Top mobile brands.
+    <div class="max-w-fit md:py-[80] py-5 flex mx-4 sm:flex-row flex-col bg-orange-300 justify-around rounded-lg">
+        <div class="basis-[35%] pb-5 mx-auto overflow-hidden px-10">
+            <img src="public/print.jpg" alt="No image !!!!"
+                class=" w-64 rounded-full h-64 hover:scale-125 duration-1000">
+        </div>
+        <div class="basis-[65%] m-12">
+            <div class="sm:text-6xl text-4xl text-center sm:text-left hover:italic">
+                Stage V : Printing
             </div>
-            <p class="w-2/3 py-3">
-                You will get the list of top mobile phones here.
+            <div class="lg:w-80 mx-20 h-1 border-b-4 border-blue-400 mt-2 rounded-2xl md:w-12"></div>
+            <p class="py-3 text-justify hover:text-xl">
+                Once the question paper proof check is complete, printing of question papers can be started according to the seating plan given by the different departmens. All the question papers must be ready by 1-2 days before the examinations in different envelopes room wise. For some departments the final printed question papers are checked by the OIC appointed by  the departments. After the completion of checking process, the final printed question papers are dispatched to the departments on the day of exam or one day before the exams. Also the Hall tickets for Arrear candidates are also generated, printed and send to the departments.
             </p>
-            <div class="my-4">
-                <button class="bg-purple-500 px-3 py-2 rounded-xl hover:text-slate-900 hover:bg-fuchsia-100"> Show more
+            <div class="flex flex-col items-end">
+                <button
+                    class="bg-purple-500 px-3 py-2 rounded-xl hover:text-slate-900 hover:bg-fuchsia-100 border-b-4 hover:border-black">
+                    Show more
                 </button>
             </div>
         </div>
-        <div class="flex items-center">
-            <img src="public/print.jpg" alt="No image !!!!" class=" w-80">
-        </div>
-    </main>
+    </div>
     <main class="flex bg-green-200 justify-around">
         <div class="main py-40 pl-9">
             <div class="text-6xl">
