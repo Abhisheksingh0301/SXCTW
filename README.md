@@ -24,6 +24,6 @@
 
 # git -hard  //to get commitID
 
-
+git remote set-url origin https://github.com/Abhisheksingh0301/studentid.git    
 
 
